@@ -49,7 +49,12 @@ const glass_fibre = IsotropicMaterial(
 
 
 const sample_A_fibre = IsotropicMaterial(
-    tag="sample_A_fibre", K=0.1,
+    tag="sample_A_fibre", K=150.0,
+)
+
+
+const sample_B_fibre = IsotropicMaterial(
+    tag="sample_B_fibre", K=300.0,
 )
 
 
@@ -57,6 +62,10 @@ const silenka_e_glass_1200tex = IsotropicMaterial(
     tag="silenka_e_glass", E=74.0e09, nu=0.2, alpha=4.9e-06,
 )
 
+
+const Dglass = IsotropicMaterial(
+    tag="Dglass", E=51.7e09, nu=0.22, alpha=2.5e-06,
+)
 
 
 const epoxy_sample_1 = OrthotropicMaterial(
